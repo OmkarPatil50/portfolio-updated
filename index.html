@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMKAR PATIL</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cbf60c64e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="header">
+        <div class="navigation">
+          <div class="name"><span class="highlight">O</span>MKAR</div>
+          <ul class="nav-ul" id="menu-handle">
+            <li class="nav-btn"><a href="#" class="anchor-nav">Home</a></li>
+            <li class="nav-btn"><a href="#" class="anchor-nav">About</a></li>
+            <li class="nav-btn"><a href="#" class="anchor-nav">Servies</a></li>
+            <li class="nav-btn">
+              <a href="#" class="anchor-nav">Portfolio</a>
+            </li>
+            <li class="nav-btn"><a href="#" class="anchor-nav">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="menu" onclick="openmenu()"></i>
+        </div>
+        <div class="header-main">
+          <h1>
+            Hi, I'm <span>Omkar</span><br />
+            From Maharashtra,
+            <span style="color: rgb(241, 61, 16)">IN</span>D<span
+              style="color: Green"
+              >IA</span
+            >
+          </h1>
+        </div>
+      </div>
+
+      <!-- /* -------------------about---------------------------- */ -->
+
+      <div class="about-info">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Image/aboutimg.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Omkar Patil. I graduated from Government College of
+              Engineering, Karad in 2021. Now, I am looking for my first
+              full-time job. The world is changing rapidly, and I don’t have
+              enough professional experience to be certain about such things.
+              However, I know that I can provide a fresh take and an
+              extraordinary approach to every project. I am always open to
+              challenges and constructive feedback. I am open-minded and learn
+              new things quickly. I want to become a team player and dedicate
+              all my skills and talents to develop high-quality and unique
+              products.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2017</span><br />HSC from The New College,Kolhapur
+                </li>
+                <li>
+                  <span>2021</span><br />B.Tech from Government College of
+                  Engineering, Karad
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /* -----------------------services--------------------- */ -->
+
+      <div class="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Designing Web Interfaces</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>UI/UX Design</h2>
+              <p>Designing Web/App Interfaces</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>Web Development</h2>
+              <p>Web app Development</p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /* ---------------------portfolio---------------s---- */ -->
+
+      <div class="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+
+          <div class="work-list">
+            <div class="work">
+              <img src="/Image/work-1.png" />
+              <div class="layer">
+                <h3>CLI Apps</h3>
+                <p>Basic Command Line Interface Apps</p>
+                <a href=""> <i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="/Image/work-2.png" />
+              <div class="layer">
+                <h3>Vanilla.JS Apps</h3>
+                <p>Various Apps Built With Vanilla.JS</p>
+                <a href=""> <i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="/Image/work-3.png" />
+              <div class="layer">
+                <h3>React Apps</h3>
+                <p>Various Apps Built With React</p>
+                <a href=""> <i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/" class="btn">See More</a>
+
+          <!-- /* -----------------------contact----------------------------- */ -->
+
+          <div class="contact">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> omkarp5429@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 976 39 29 376</p>
+                <div class="social-icons">
+                    <a href="/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="/"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="http://" download class="btn btnCV">Download CV</a>
+              </div>
+              <div class="contact-right">
+                <form>
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Enter your Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Name"
+                    placeholder="Enter your Email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Anything to say..?"
+                  ></textarea>
+                  <button type="submit" class="btn btnCV">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </main>
+
+    <div class="copyright">
+        Copyright @ Omkar. Made with <i class="fa-solid fa-heart"></i> by Omkar Patil
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-content");
+
+      function opentab(tabname) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+<script>
+    var clickMenu =document.getElementById("menu-handle");
+
+    function openmenu(){
+        clickMenu.style.right ="0"
+    }
+    function closemenu(){
+        clickMenu.style.right = "-200px"
+    }
+</script>
+
+
+  </body>
+</html>
