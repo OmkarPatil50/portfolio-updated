@@ -571,8 +571,9 @@ cursor: pointer;
     margin-left: 30px;
   }
 
+
   .contact-right{
-    margin-right: 10px;
+    margin-right: 20px;
     flex-basis: 100%;
     
   }
