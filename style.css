@@ -2,6 +2,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
     body {
         font-family: 'Poppins', sans-serif;
         background-color: black;
@@ -73,7 +81,7 @@
         text-decoration: none;
         color: var(--primary-color);
         font-size: 18px;
-        font-weight: bold;
+    
         position: relative;
     }
 
@@ -468,6 +476,11 @@ form .btnCV{
     
 }
 
+
+
+
+
+
 /* ---------------small-screens------------------ */
 
 
@@ -578,4 +591,11 @@ cursor: pointer;
     
   }
 
+}
+
+
+#message-contact{
+    color: green;
+    margin: 20px;
+    font-size: larger;
 }

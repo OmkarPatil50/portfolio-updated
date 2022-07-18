@@ -14,17 +14,17 @@
 
   <body>
     <main>
-      <div class="header">
+      <div class="header" id="header">
         <div class="navigation">
           <div class="name"><span class="highlight">O</span>MKAR</div>
           <ul class="nav-ul" id="menu-handle">
-            <li class="nav-btn"><a href="#" class="anchor-nav">Home</a></li>
-            <li class="nav-btn"><a href="#" class="anchor-nav">About</a></li>
-            <li class="nav-btn"><a href="#" class="anchor-nav">Servies</a></li>
+            <li class="nav-btn"><a href="#header" class="anchor-nav">Home</a></li>
+            <li class="nav-btn"><a href="#about-info" class="anchor-nav">About</a></li>
+            <li class="nav-btn"><a href="#services" class="anchor-nav">Servies</a></li>
             <li class="nav-btn">
-              <a href="#" class="anchor-nav">Portfolio</a>
+              <a href="#portfolio" class="anchor-nav">Portfolio</a>
             </li>
-            <li class="nav-btn"><a href="#" class="anchor-nav">Contact</a></li>
+            <li class="nav-btn"><a href="#contact" class="anchor-nav">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" id="menu" onclick="openmenu()"></i>
@@ -43,7 +43,7 @@
 
       <!-- /* -------------------about---------------------------- */ -->
 
-      <div class="about-info">
+      <div class="about-info" id="about-info">
         <div class="row">
           <div class="about-col-1">
             <img src="/Image/aboutimg.png" />
@@ -91,7 +91,7 @@
 
       <!-- /* -----------------------services--------------------- */ -->
 
-      <div class="services">
+      <div class="services" id="services">
         <div class="container">
           <h1 class="sub-title">My Services</h1>
           <div class="services-list">
@@ -119,7 +119,7 @@
 
       <!-- /* ---------------------portfolio---------------s---- */ -->
 
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <div class="container">
           <h1 class="sub-title">My Work</h1>
 
@@ -155,7 +155,7 @@
       </div>
           <!-- /* -----------------------contact----------------------------- */ -->
 
-          <div class="contact">
+          <div class="contact" id="contact">
             <div class="row">
               <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -170,7 +170,7 @@
                 <a href="http://" download class="btn btnCV">Download CV</a>
               </div>
               <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                   <input
                     type="text"
                     name="Name"
@@ -179,7 +179,7 @@
                   />
                   <input
                     type="email"
-                    name="Name"
+                    name="Email"
                     placeholder="Enter your Email"
                     required
                   />
@@ -189,11 +189,12 @@
                     placeholder="Anything to say..?"
                   ></textarea>
                   <button type="submit" class="btn btnCV">Submit</button>
+                  <span id="message-contact"></span>
                 </form>
               </div>
             </div>
           </div>
-       
+         
        
      
     </main>
@@ -229,7 +230,23 @@
         clickMenu.style.display ="none"
     }
 </script>
-
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby_Cz2Mp5Y1dTu529Tp0nvxxJEywaoLwty3n1P0xEJ5lLZ8fJ_BP3moOAkJNr26CI8n/exec'
+  const form = document.forms['submit-to-google-sheet']
+const contactMessage = document.getElementById("message-contact")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        contactMessage.innerHTML = "Message Sent Successfully..!"
+        setTimeout(function(){
+          contactMessage.innerHTML ="";
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
   </body>
 </html>
