@@ -476,10 +476,12 @@ form .btnCV{
 
 main{
     margin-left: 10px;
+    overflow: hidden;
 }
 
     .header{
         background-image: url(/Image/phonebcg.png);
+
     }
     .name{
         font-size: 18px;
@@ -499,17 +501,18 @@ main{
     display: block;
     font-size: 25px;
    }
-
+   
    .nav-ul{
-   display:none ;
+  display: none;
     position: absolute;
     background-color: var(--hover-color);
-    top: 0;
+    bottom: 5;
     right: -300px;
     width: 200px;
-    height: 100vh;
+    height: 90vh;
    padding-top: 50px;
 z-index: 2;
+transition: all;
 transition-duration: 0.5s;
    }
 
