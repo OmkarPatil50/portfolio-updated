@@ -501,6 +501,7 @@ main{
    }
 
    .nav-ul{
+    overflow: hidden;
     position: absolute;
     background-color: var(--hover-color);
     top: 0;
