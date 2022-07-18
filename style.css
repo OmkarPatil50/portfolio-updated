@@ -572,6 +572,7 @@ cursor: pointer;
   }
 
   .contact-right{
+    margin-right: 10px;
     flex-basis: 100%;
     
   }
