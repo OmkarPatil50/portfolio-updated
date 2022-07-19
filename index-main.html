@@ -31,7 +31,7 @@
         </div>
         <div class="header-main">
           <h1>
-            Hi, I'm <span>Omkar</span><br />
+            Hi, I'm <span class="auto-input"></span><br />
             From Maharashtra,
             <span style="color: rgb(241, 61, 16)">IN</span>D<span
               style="color: Green"
@@ -247,6 +247,14 @@ const contactMessage = document.getElementById("message-contact")
       .catch(error => console.error('Error!', error.message))
   })
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".auto-input",{
+    strings:["Omkar","Web Developer","UI Designer"],
+    typeSpeed: 100,
+    backSpeed:100,
+    loop:true
+  })
+</script>
   </body>
 </html>
