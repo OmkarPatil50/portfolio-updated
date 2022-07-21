@@ -140,3 +140,32 @@ span{
 .copyright i{
     color: var(--hover-color);
 }
+
+
+@media only screen and (max-width: 600px){
+
+.body{
+    margin: 0;
+}
+
+    .navigation h1{
+        font-size: 40px;
+    }
+
+    .list-apps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layer a{
+        text-decoration: none;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px 20px;
+        color: var(--hover-color);
+       font-size: 16px;    
+    }
+    
+
+}
