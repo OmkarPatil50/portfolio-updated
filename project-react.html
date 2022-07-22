@@ -9,6 +9,9 @@
    
 </head>
 <body>
+
+
+  <main id="main-content">
    <div class="container">
     <div class="header" id="header">
       <div class="navigation">
@@ -64,5 +67,21 @@
    <div class="copyright">
     Copyright @ Omkar. Made with <i class="fa-solid fa-heart"></i> by Omkar Patil
 </div>
+</main>
+
+
+<script>
+
+  var loader = document.getElementById("pre-loader")
+ var main = document.getElementById("main-content")
+
+
+  window.addEventListener("load", function loading(){
+    
+   loader.style.display="none";
+   main.style.display="block";
+ 
+  })
+ </script>
 </body>
 </html>

@@ -190,8 +190,11 @@
                     rows="6"
                     placeholder="Anything to say..?"
                   ></textarea>
-                  <button type="submit" class="btn btnCV">Submit</button>
+                  <button type="submit" class="btn btnCV" >Submit</button>
+                  <div id="meassage-send"></div>
                   <span id="message-contact"></span>
+                 
+
                 </form>
               </div>
             </div>
@@ -220,6 +223,11 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+
+
+
+
+
 <script>
     var clickMenu =document.getElementById("menu-handle");
 
@@ -233,16 +241,22 @@
     }
 </script>
 <script>
+
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycby_Cz2Mp5Y1dTu529Tp0nvxxJEywaoLwty3n1P0xEJ5lLZ8fJ_BP3moOAkJNr26CI8n/exec'
   const form = document.forms['submit-to-google-sheet']
-const contactMessage = document.getElementById("message-contact")
+const contactMessage = document.getElementById("message-contact");
+const sendingMessage = document.getElementById("meassage-send");
   form.addEventListener('submit', e => {
+    sendingMessage.style.display="block"
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
+       sendingMessage.style.display = "none"
         contactMessage.innerHTML = "Message Sent Successfully..!"
         setTimeout(function(){
-          contactMessage.innerHTML ="Loading";
+          contactMessage.innerHTML ="";
+
         },5000)
         form.reset()
       })
@@ -263,7 +277,9 @@ const contactMessage = document.getElementById("message-contact")
 
  var loader = document.getElementById("pre-loader")
 var main = document.getElementById("main-content")
+
  window.addEventListener("load", function(){
+
   loader.style.display="none";
   main.style.display="block";
 
