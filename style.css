@@ -19,7 +19,7 @@ html{
 
     main {
         margin-left: 10%;
-        
+        display: none;
     }
 
     :root {

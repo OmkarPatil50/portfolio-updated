@@ -16,7 +16,7 @@
   <body>
 
     <div id="pre-loader"></div>
-    <main>
+    <main id="main-content">
       <div class="header" id="header">
         <div class="navigation">
           <div class="name"><span class="highlight">O</span>MKAR</div>
@@ -262,9 +262,10 @@ const contactMessage = document.getElementById("message-contact")
 <script>
 
  var loader = document.getElementById("pre-loader")
-
+var main = document.getElementById("main-content")
  window.addEventListener("load", function(){
-  loader.style.display="none"
+  loader.style.display="none";
+  main.style.display="block";
  })
 </script>
 
