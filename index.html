@@ -242,7 +242,7 @@ const contactMessage = document.getElementById("message-contact")
       .then(response => {
         contactMessage.innerHTML = "Message Sent Successfully..!"
         setTimeout(function(){
-          contactMessage.innerHTML ="";
+          contactMessage.innerHTML ="Loading";
         },5000)
         form.reset()
       })
@@ -266,6 +266,7 @@ var main = document.getElementById("main-content")
  window.addEventListener("load", function(){
   loader.style.display="none";
   main.style.display="block";
+
  })
 </script>
 
