@@ -172,7 +172,7 @@ transition-duration: 0.5s;
     }
 
     .sub-title {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 600;
         color: var(--primary-color);
     }
@@ -560,7 +560,7 @@ cursor: pointer;
    }
 
    .sub-title{
-    font-size: 40px;
+    font-size: 30px;
    }
   .about-col-2{
     margin-top: 20px;
