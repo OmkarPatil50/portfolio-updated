@@ -128,8 +128,9 @@ main {
 }
 
 .about-col-1 img {
-  width: 105%;
-  padding: 80px 10px 0px 10px;
+  width: 100%;
+  padding: 80px 10px;
+  cursor: pointer;
 }
 
 .about-col-1:hover {
